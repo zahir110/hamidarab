@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Bike, CheckCircle2, ChevronRight, Clock, MapPin, Menu as MenuIcon, MessageCircle, Minus, Phone, Plus, Search, ShoppingBag, Utensils, X } from "lucide-react";
+import { Bike, CheckCircle2, ChevronRight, Clock, Instagram, MapPin, Menu as MenuIcon, MessageCircle, Minus, Phone, Plus, Search, ShoppingBag, Utensils, X } from "lucide-react";
 import { categories, defaultMenu, defaultSiteSettings, type MenuItem, type SiteSettings } from "@/lib/menu";
 import type { Order, OrderStatus } from "@/lib/orders";
 
@@ -254,9 +254,10 @@ export default function KebabestApp() {
           <a className="brand-mini" href="#home">{settings.restaurantName.toUpperCase()}</a>
           <div className="nav-links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#order">Order</a><a href="#offers">Offers</a><a href="#about">About Us</a><a href="#contact">Contact</a></div>
           <a className="phone-pill" href={`tel:${tel}`}><Phone size={18} /> {settings.phone}</a>
+          <a className="instagram-link" href="https://www.instagram.com/kebabest.in?igsh=ejN2Y2VhcDlpaGEz" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18} /></a>
           <button className="round-menu" aria-label="Open site menu" aria-expanded={navOpen} onClick={() => setNavOpen((open) => !open)}><MenuIcon size={22} /></button>
           <div className={`site-drawer ${navOpen ? "open" : ""}`}>
-            <a onClick={() => setNavOpen(false)} href="#home">Home</a><a onClick={(event) => { event.preventDefault(); setNavOpen(false); openFullMenu(); }} href="#menu">Menu</a><a onClick={() => setNavOpen(false)} href="#order">Order</a><a onClick={() => setNavOpen(false)} href="#offers">Offers</a><a onClick={() => setNavOpen(false)} href="#about">About Us</a><a onClick={() => setNavOpen(false)} href="#contact">Contact</a>
+            <a onClick={() => setNavOpen(false)} href="#home">Home</a><a onClick={(event) => { event.preventDefault(); setNavOpen(false); openFullMenu(); }} href="#menu">Menu</a><a onClick={() => setNavOpen(false)} href="#order">Order</a><a onClick={() => setNavOpen(false)} href="#offers">Offers</a><a onClick={() => setNavOpen(false)} href="#about">About Us</a><a onClick={() => setNavOpen(false)} href="#contact">Contact</a><a onClick={() => setNavOpen(false)} href="https://www.instagram.com/kebabest.in?igsh=ejN2Y2VhcDlpaGEz" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={16} /> Instagram</a>
           </div>
         </nav>
         <div className="authentic-badge" aria-label="Authentic Iranian flavors"><span>AUTHENTIC</span><strong>IRANIAN</strong><span>FLAVORS</span></div>

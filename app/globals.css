@@ -87,6 +87,19 @@ button,input,textarea{font:inherit}
   box-shadow:0 12px 30px rgba(0,0,0,.28);
   white-space:nowrap;
 }
+.instagram-link{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#f58529,#dd2a7b 45%,#8134af 75%,#515bd4);
+  color:#fff;
+  box-shadow:0 12px 26px rgba(0,0,0,.24);
+  flex:0 0 auto;
+}
+.site-drawer a[aria-label="Instagram"]{display:flex;align-items:center;gap:8px;}
 .round-menu{
   width:52px;
   height:52px;
@@ -3065,3 +3078,4 @@ button,input,textarea{font:inherit}
   }
   .content-grid.polished-menu-zone.open .menu-panel.is-open .tabs{display:none !important;}
 }
+@media(max-width:1024px){.instagram-link{display:none !important;}}
